@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .task-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .task-item {
+            border-bottom: 1px solid #ced4da;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .btn-group {
+            margin-top: 10px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: 1px solid #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border: 1px solid #0056b3;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            border: 1px solid #28a745;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border: 1px solid #218838;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border: 1px solid #dc3545;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border: 1px solid #c82333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1 class="mb-4">To-Do</h1>
+
+
+        <form id="taskForm">
+            <div class="form-group">
+                <label for="title">Task:</label>
+                <input type="text" class="form-control" id="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea class="form-control" id="description" rows="3" required></textarea>
+            </div>
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary">Add/Update</button>
+            </div>
+        </form>
+    </div>
+
+
+    <ul class="task-list" id="taskList">
+
+    </ul>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script src="index.js"></script>
+</body>
+</html>
